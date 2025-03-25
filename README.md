@@ -123,8 +123,8 @@ const checkPayment = await heleket.getPaymentInfo({
 **Send Request** 
 ```javascript
 const paymentList = await heleket.getPaymentHistory({
-    date_from: "2023-05-16 00:00:00",
-    date_to: "2023-05-16 23:59:59"
+    date_from: "2025-03-25 00:00:00",
+    date_to: "2025-03-25 23:59:59"
 });
 ```
 
@@ -152,8 +152,8 @@ const paymentList = await heleket.getPaymentHistory({
         "expired_at": 1654873897,
         "status": "check",
         "is_final": false,
-        "created_at": "2023-05-02T13:52:28+03:00",
-        "updated_at": "2023-05-02T14:54:15+03:00"
+        "created_at": "2025-05-02T13:52:28+03:00",
+        "updated_at": "2025-05-02T14:54:15+03:00"
       }
     ],
     "paginate": {
@@ -217,7 +217,7 @@ const refund = await heleket.refund({
     // Invoice is identified by order_id or uuid, if you pass both, the account will be identified by uuid
     uuid: "0987654321",
     order_id: "1234567890",
-    address: "13029i0jwqdjas",
+    address: "2139129askldkas",
     is_subtract: true, // Determines whether the commission is to be charged to the merchant or to the client (true - to the merchant, false - to the client)
 });
 ```
